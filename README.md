@@ -11,7 +11,7 @@ Example of draw and connect particles with Java using graphics.
 
 ![Particles](./particles.png)
 
-##Compile
+## Compile
 
 ```console
 mvn clean install
