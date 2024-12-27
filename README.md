@@ -1,9 +1,9 @@
 # jParticles
 
 <p>
-	![Static Badge](https://img.shields.io/badge/JAVA-22-e61f24)
-	![Static Badge](https://img.shields.io/badge/Maven-3.9.9-dfcddd)
-	[![MIT licensed](https://img.shields.io/badge/license-MIT-blue)](https://github.com/jhonnymontoya/jParticles/blob/main/LICENSE)
+	<img alt="Static Badge" src="https://img.shields.io/badge/JAVA-22-e61f24">
+	<img alt="Static Badge" src="https://img.shields.io/badge/Maven-3.9.9-dfcddd">
+	<img alt="Static Badge" src="https://img.shields.io/badge/license-MIT-blue">
 </p>
 
 Example of draw and connect particles with Java
