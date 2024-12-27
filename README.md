@@ -6,8 +6,19 @@
 	<img alt="Static Badge" src="https://img.shields.io/badge/license-MIT-blue">
 </p>
 
-Example of draw and connect particles with Java
+## Overview
+Example of draw and connect particles with Java using graphics.
 
+![Particles](./particles.png)
+
+##Compile
+
+```console
+mvn clean install
+```
+
+## Why?
+Just for fun.
 
 ## Licence
 
