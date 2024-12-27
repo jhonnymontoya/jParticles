@@ -17,8 +17,8 @@ public class MainForm extends JFrame {
 
 	private static final long serialVersionUID = -8584768835443350206L;
 	
-	private final int WIDTH = 800;
-	private final int HEIGHT = 600;
+	private final int WIDTH = 1300;
+	private final int HEIGHT = 800;
 
 	private Canvas canvas = null;
 
