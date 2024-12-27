@@ -30,7 +30,8 @@ public class Canvas extends JPanel implements ActionListener, ComponentListener 
 	 */
 	private static final long serialVersionUID = -3645856309417573045L;
 	
-	private final int NUMBER_BALLS = 30;
+	private final int NUMBER_BALLS = 150;
+	private final int MINIMUM_DIST = 100;
 	
 	private int canvasWidth = 0;
 	private int canvasHeight = 0;
@@ -70,10 +71,22 @@ public class Canvas extends JPanel implements ActionListener, ComponentListener 
 		super.paintComponent(g);
 		Graphics2D g2 = (Graphics2D)g.create();
 		g2.addRenderingHints(this.hints);
-		
+
 		g2.clearRect(0, 0, this.canvasWidth, this.canvasHeight);
-		
+
 		this.balls.forEach(ball -> {
+
+			this.balls.forEach(ball2 -> {
+				if (ball.getUuid().equals(ball2.getUuid())) {
+					return;
+				}
+
+				int distance = Common.getDistance(ball, ball2);
+				if (distance < this.MINIMUM_DIST) {
+					g2.drawLine(ball.getX(), ball.getY(), ball2.getX(), ball2.getY());
+				}
+			});
+
 			ball.draw(g2);
 		});
 	}
