@@ -7,6 +7,9 @@ import java.awt.GraphicsEnvironment;
 import java.awt.Rectangle;
 import java.awt.GraphicsDevice;
 import java.util.UUID;
+
+import app.jhonnymontoya.jParticles.forms.Ball;
+
 import java.util.Random;
 
 /**
@@ -73,6 +76,12 @@ public class Common {
 		}
 		while(randomNumber == 0);
 		return randomNumber;
+	}
+	
+	public static int getDistance(Ball ball, Ball ball2) {
+		int deltaX = ball2.getX() - ball.getX();
+		int deltaY = ball2.getY() - ball.getY();
+		return (int)Math.sqrt(Math.pow(deltaX, 2) + Math.pow(deltaY, 2));
 	}
 	
 }
