@@ -6,6 +6,7 @@ package app.jhonnymontoya.jParticles.forms;
 import java.awt.HeadlessException;
 import java.awt.Rectangle;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
 import app.jhonnymontoya.jParticles.Common;
@@ -25,6 +26,7 @@ public class MainForm extends JFrame {
 	public MainForm() throws HeadlessException {
 		super("Particles");
 		this.setFormBounds(this.WIDTH, this.HEIGHT);
+		this.loadIcon();
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		this.canvas = new Canvas(this.WIDTH, this.HEIGHT);
@@ -44,6 +46,10 @@ public class MainForm extends JFrame {
 		this.setBounds(bounds);
 	}
 	
-	
+	private void loadIcon() {
+		String resource = "icons/particles.png";
+		ImageIcon icon = new ImageIcon(this.getClass().getClassLoader().getResource(resource));
+		this.setIconImage(icon.getImage());
+	}
 
 }
