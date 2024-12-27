@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>app.jhonnymontoya</groupId>
+  <artifactId>jParticles</artifactId>
+  <version>0.0.1</version>
+  <name>Particles</name>
+  <description>Example of drawing and connect particles</description>
+  
+  <properties>
+  	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  	<project.compiler.source>22</project.compiler.source>
+  	<project.compiler.tarjet>22</project.compiler.tarjet>
+  </properties>
+  
+  <build>
+  	<finalName>jParticles</finalName>
+  	<plugins>
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-assembly-plugin</artifactId>
+  			<configuration>
+  				<archive>
+  					<manifest>
+  						<addClasspath>true</addClasspath>
+  						<mainClass>app.jhonnymontoya.jParticles.Main</mainClass>
+  					</manifest>
+  					<descriptorRefs>
+  						<descriptorRef>jar-with-dependencies</descriptorRef>
+  					</descriptorRefs>
+  				</archive>
+  			</configuration>
+  			<executions>
+  				<execution>
+  					<id>make-assembly</id>
+  					<phase>package</phase>
+  					<goals>
+  						<goal>single</goal>
+  					</goals>
+  				</execution>
+  			</executions>
+  		</plugin>
+  	</plugins>
+  </build>
+  
+  <organization>
+  	<name>Jhonny Montoya</name>
+  </organization>
+  
+</project>
