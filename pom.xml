@@ -3,7 +3,7 @@
   <groupId>app.jhonnymontoya</groupId>
   <artifactId>jParticles</artifactId>
   <version>0.0.1</version>
-  <name>Particles</name>
+  <name>jParticles</name>
   <description>Example of drawing and connect particles</description>
   
   <properties>
@@ -24,10 +24,10 @@
   						<addClasspath>true</addClasspath>
   						<mainClass>app.jhonnymontoya.jParticles.Main</mainClass>
   					</manifest>
-  					<descriptorRefs>
-  						<descriptorRef>jar-with-dependencies</descriptorRef>
-  					</descriptorRefs>
   				</archive>
+  				<descriptorRefs>
+  					<descriptorRef>jar-with-dependencies</descriptorRef>
+  				</descriptorRefs>
   			</configuration>
   			<executions>
   				<execution>
